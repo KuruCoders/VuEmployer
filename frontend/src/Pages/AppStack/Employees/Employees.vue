@@ -2,11 +2,13 @@
 import BreadCrumb from '../../../components/BreadCrumb/BreadCrumb.vue'
 import EmployeeItem from './EmployeeItem/EmployeeItem.vue';
 import Paginator from '../../../components/Paginator/Paginator.vue'
-import AddEmployee from './AddEmployee/AddEmployee.vue'
+import { useRouter } from 'vue-router';
+
+const router = useRouter()
 </script>
 
 <template>
-    <main className="main-content-wrapper">
+    <main className="main-content-wrapper pt-14">
         <div className="container">
             <BreadCrumb :iconName="'fa-user-nurse'" :title="'Employees'" />
             <div className="row">
@@ -21,7 +23,7 @@ import AddEmployee from './AddEmployee/AddEmployee.vue'
                                     </form>
                                 </div>
                                 <div className="col-md-6 text-end">
-                                    <button  data-bs-toggle="modal"  data-bs-target="#addEmpModal" className='btn btn-dark'>Add Employee</button>
+                                    <button @click="router.push('/app/addEmployee')" className='btn btn-dark'>Add Employee</button>
                                 </div>
                                 <AddEmployee/>
                             </div>

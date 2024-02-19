@@ -4,6 +4,8 @@ import Employees from '@/Pages/AppStack/Employees/Employees.vue'
 import SignIn from '@/Pages/AuthStack/SignIn/SignIn.vue'
 import SignUp from '@/Pages/AuthStack/SignUp/SignUp.vue'
 import Error404 from '@/Pages/ErrorPage/Error404/Error404.vue'
+import AddEmployee from '../Pages/AppStack/AddEmp/AddEmp.vue'
+import EditEmployee from '../Pages/AppStack/EditEmp/EditEmpl.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,11 +32,21 @@ const router = createRouter({
             children: [
                 {
                     path: '',
-                    component:Employees
+                    component: Employees
                 },
                 {
                     path: 'employees',
                     component: Employees
+                },
+                {
+                    path: 'addEmployee',
+                    component:AddEmployee
+
+                },
+                {
+                    path: 'editEmployee/:id',
+                    component:EditEmployee
+
                 },
                 {
                     path: 'dashboard',
