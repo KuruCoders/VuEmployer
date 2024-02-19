@@ -1,42 +1,44 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router';
+</script>
 
 <template>
     <nav class="navbar-vertical-nav offcanvas offcanvas-start navbar-offcanvac" tabIndex={-1} id="offcanvasExample">
         <div class="navbar-vertical">
             <div class="px-4 py-5 d-flex justify-content-between align-items-center">
-                <NavLink class="navbar-brand">
+                <a class="navbar-brand">
                     <img class='img-fluid w-50' src="/assets/images/logo/freshcart-logo.png" alt />
-                </NavLink>
+                </a>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" />
             </div>
             <div class="navbar-vertical-content flex-grow-1" data-simplebar>
                 <ul class="navbar-nav flex-column">
                     <li class="nav-item">
-                        <NavLink class="nav-link ">
+                        <RouterLink to="/app/dashboard" exact active-class="active" class="nav-link ">
                             <div class="d-flex align-items-center">
                                 <span class="nav-link-icon"><i class="fa-solid fa-dashboard" /></span>
                                 <span class="nav-link-text">Dashboard</span>
                             </div>
-                        </NavLink>
+                        </RouterLink>
                     </li>
                     <hr class='bordered my-0' />
                     <li class="nav-item">
-                        <NavLink class="nav-link ">
+                        <RouterLink to="/app/employees" exact active-class="active"  class="nav-link ">
                             <div class="d-flex align-items-center">
                                 <span class="nav-link-icon"><i class="fa-solid fa-people-group" /></span>
                                 <span class="nav-link-text">Employees</span>
                             </div>
-                        </NavLink>
+                        </RouterLink>
                     </li>
 
                     <hr class='bordere my-0' />
                     <li class="nav-item">
-                        <NavLink class="nav-link">
+                        <a class="nav-link">
                             <div class="d-flex align-items-center">
                                 <span class="nav-link-icon"><i class="fa-solid fa-user" /></span>
                                 <span class="nav-link-text">Profile</span>
                             </div>
-                        </NavLink>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <button class="nav-link">

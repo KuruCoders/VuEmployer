@@ -1,6 +1,8 @@
 <script setup>
 import BreadCrumb from '../../../components/BreadCrumb/BreadCrumb.vue'
 import EmployeeItem from './EmployeeItem/EmployeeItem.vue';
+import Paginator from '../../../components/Paginator/Paginator.vue'
+import AddEmployee from './AddEmployee/AddEmployee.vue'
 </script>
 
 <template>
@@ -19,8 +21,9 @@ import EmployeeItem from './EmployeeItem/EmployeeItem.vue';
                                     </form>
                                 </div>
                                 <div className="col-md-6 text-end">
-                                    <button className='btn btn-dark'>Add Employee</button>
+                                    <button  data-bs-toggle="modal"  data-bs-target="#addEmpModal" className='btn btn-dark'>Add Employee</button>
                                 </div>
+                                <AddEmployee/>
                             </div>
                         </div>
                         <div className="card-body p-0">
