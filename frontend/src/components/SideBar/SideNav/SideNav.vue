@@ -1,5 +1,12 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import { RouterLink,useRouter } from 'vue-router';
+import Authenticate from '@/Store/Authenticate';
+
+const router = useRouter()
+const logoutUser = () => {
+    Authenticate.logoutUser()
+    router.push('/')
+}
 </script>
 
 <template>
@@ -51,7 +58,7 @@ import { RouterLink } from 'vue-router';
                         </button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link w-100">
+                        <button @click="logoutUser" class="nav-link w-100">
                             <div class="d-flex align-items-center">
                                 <span class="nav-link-icon"><i class="fa-solid fa-lock" /></span>
                                 <span class="nav-link-text">Logout</span>
