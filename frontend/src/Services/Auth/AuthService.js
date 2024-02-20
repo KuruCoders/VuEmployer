@@ -10,7 +10,8 @@ class AuthService{
     authRegister(input) {
         let data = {
             name:input.name,
-            email:input.email,
+            email: input.email,
+            telephone:input.telephone,
             password:input.password,
             passwordConfirm:input.password,
         }

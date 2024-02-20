@@ -21,9 +21,9 @@ if (Authenticate.isAuthenticated()) {
 }
 
 const submitData = async () => {
-    loading.value = true;
-    toast.info('Validating Credentials')
     try {
+        loading.value = true;
+        toast.info('Validating Credentials')
         const data = {email:authModel.value.email,password:authModel.value.password}
         const response = await AuthService.authLogin(data)
         if (response.data.token) {
