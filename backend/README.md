@@ -1,29 +1,20 @@
-# VuEmployer
 
-This template should help get you started developing with Vue 3 in Vite.
+# BackEnd
 
-## Recommended IDE Setup
+![Desktop - 1](https://miro.medium.com/v2/resize:fit:904/1*kSiVfGxrMY2cdbZA6BilXw.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+PocketBase is a reliable backend solution, securely hosted on pocketHost.io! 🚀 Accessing this backend is seamless through the provided link. 😎 Simply log in with your credentials to unleash the full potential of your application. 💼 With features tailored for efficient development, data management, and improved performance, PocketBase is your trusted ally in app development. 📱🌐 Whether you're crafting a web app, mobile app, or anything in between, PocketBase has got you covered. Dive into the backend, harness the power of data, and watch your app thrive! 🌟🔐💡
+## 
 
-## Customize configuration
+#### Backend Login Auths
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```http
+  https://lets-connect.pockethost.io/_/?#/login
 ```
 
-### Compile and Hot-Reload for Development
+| Credentials | Value     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Email` | `xxxxxxxx@gmail.com` | **Required**. Email For Backend Login |
+| `Password` | `xxxxxxx` | **Required**. Request Owner |
 
-```sh
-npm run dev
-```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
