@@ -1,14 +1,7 @@
 # VuEmployer
 
-This template should help get you started developing with Vue 3 in Vite.
+<img alt="Slide 4_3 - 1 (4)" src="https://github.com/KuruCoders/VuEmployer/assets/103739510/5252c4d4-ce85-4462-ab7b-3965c567b1aa">
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
